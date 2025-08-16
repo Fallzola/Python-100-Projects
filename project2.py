@@ -11,4 +11,4 @@ people = input("Quantas pessoas vão dividir a conta? ")
 
 total = (float(bill) + (float(bill) * (float(tip) / 100)) / float(people))
 
-print(f"Cada pessoa deve pagar: {total:.2f}$")
+print(f"Cada pessoa deve pagar um total de: {total:.2f}$")
