@@ -1,13 +1,11 @@
 import sys
 
-from project2 import total
-
 print("Welcome to Python Pizza! 🍕")
-size = input("What size do you want?\n[S]Small $15\n[M]Medium $20\n[L]Large $25")
-extra = input("Do you want extra pepperoni?\n[Y] Yes, I want (+2$)\n[N]No, I don't want")
+size = input("What size do you want?\n[S]Small $15\n[M]Medium $20\n[L]Large $25\nInsert here: ")
+extra = input("Do you want extra pepperoni?\n[Y] Yes, I want (+2$)\n[N]No, I don't want\nInsert here: ")
 
-size.upper()
-extra.upper()
+size = size.upper()
+extra = extra.upper()
 
 if extra == "Y":
     extra = 2
@@ -26,4 +24,4 @@ else:
 
 total = size + extra
 
-print(f"Seu pedido ficou em {total}!")
+print(f"Your order came down to: {total}!")
